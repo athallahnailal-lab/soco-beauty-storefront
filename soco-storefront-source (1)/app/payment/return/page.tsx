@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { Header, Footer } from "@/components/storefront";
+export default function PaymentReturn(){return <><Header/><main className="page"><div className="container"><div className="success-wrap"><div className="success-icon">✓</div><h2>Pembayaran sedang diverifikasi</h2><p className="muted">Halaman kembali dari penyedia pembayaran bukan bukti pembayaran sukses. Status final diperbarui melalui notifikasi server-to-server.</p><div className="notice">Gunakan halaman lacak pesanan untuk memeriksa status setelah notifikasi diterima.</div><Link href="/orders" className="button button-primary">Lacak Pesanan</Link></div></div></main><Footer/></>;}
